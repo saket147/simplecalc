@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.saket.simplecalc.MainActivity">
+
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tgbtn"
+        android:text="on/off"
+        android:checked="false"/>
+
+    <EditText
+        android:layout_below="@id/tgbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etext1"
+        android:textSize="30dp"
+        android:hint="enter 1st number"
+        android:checked="false"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etext2"
+        android:layout_below="@id/etext1"
+        android:textSize="30dp"
+        android:hint="enter 2nd number"
+        android:checked="false"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/spin"
+        android:layout_below="@id/etext2"
+        android:entries="@array/arr"
+        android:checked="false"
+
+    />
+    <SeekBar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/sbar1"
+    android:layout_below="@id/spin"
+    />
+    <TextView
+        android:layout_below="@id/sbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtv1"
+        android:textSize="30dp"
+
+
+
+        />
+
+</RelativeLayout>

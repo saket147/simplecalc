@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">simplecalc</string>
+    <array name="arr">
+        <item>+</item>
+        <item>-</item>
+        <item>*</item>
+        <item>/</item>
+    </array>
+</resources>
